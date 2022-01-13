@@ -9,8 +9,6 @@ const form = document.querySelector(".login-form");
 
 form.addEventListener("submit", onFormSubmit);
 
-const userData = {};
-
 function onFormSubmit(event) {
   event.preventDefault();
 
