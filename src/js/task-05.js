@@ -2,5 +2,7 @@ const input = document.querySelector("#name-input");
 const output = document.querySelector("#name-output");
 
 input.addEventListener("input", (event) => {
-  output.textContent = event.currentTarget.value;
+  event.currentTarget.value !== ""
+    ? (output.textContent = event.currentTarget.value)
+    : (output.textContent = "Anonymous");
 });
